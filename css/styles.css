@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: #e7ebeb;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 0 350px;
+}
+
+.header__title{
+    color:  hsl(229, 6%, 66%);
+    font-weight: 200;
+    font-size: 1.375rem;
+}
+
+.header__subtitle{
+    color:  hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 1.375rem;
+}
+
+.header__paragrah{
+    color:  hsl(229, 6%, 66%);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.card{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card__content{
+    width: 40%;
+    height: 200px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: -1px 36px 22px -25px rgba(0,0,0,0.38);
+    padding: 30px;
+}
+
+.card__title{
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.card__paragrah{
+    color:  hsl(229, 6%, 66%);
+    font-weight: 400;
+    font-size: inherit;
+    margin-bottom: 20px;
+}
+
+.card__img{
+    width: 15%;
+}
+
+.card__content--borderred{
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+
+.card__content--borderorange{
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+
+.card__content--bordercyan{
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+
+.card__content--borderblue{
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+
+@media screen and (max-width:768px){
+    .texts{
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width:480px){
+
+    .container{
+        margin: 30px auto;
+        overflow: auto;
+    }
+
+    .header__paragrah{
+        margin-bottom: 40px;
+    }
+    .card__content{
+        width: 80%;
+        height: 210px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .card__content{
+        width: 90%;
+    }
+}
